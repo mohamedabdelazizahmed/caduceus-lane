@@ -17,7 +17,8 @@
                 </div>
 
                 <div class="card-body">
-                    @foreach(auth()->user()->notifications as $notification)
+                    @if (count(auth()->user()->notifications)) > 0)                        
+                    @foreach(optional(auth()->user())->notifications as $notification)
                         <form method="post" action="{{route('cpanel.NotificationsPost')}}">
                             @csrf
                         @if($notification->unread())
@@ -29,6 +30,10 @@
                             @endif
                         </form>
                     @endforeach
+                    @else
+                    <p> {{__('No Notification Found')}}</p>
+                    @endif
+
                 </div>
             </div>
         </div>

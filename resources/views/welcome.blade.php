@@ -5,7 +5,34 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-
+        @if(auth()->user()->role_id == 2)
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">{{ __('Rules of Doctor Panel ') }}</div>
+                <div class="card-body">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">ADD Profile For Doctor</h5>
+                                <p class="card-text">Can ADD And Edit Profile.</p>
+                                <a href="{{route('cpanel.profile')}}" class="btn btn-primary">Go Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Show Notification</h5>
+                            <p class="card-text"> Show All Notification.</p>
+                            <a href="{{route('cpanel.Notifications')}}" class="btn btn-primary">Show Notification </a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @endif
         @if(auth()->user()->role_id == 1)
         <div class="col-md-12">
             <div class="card">
