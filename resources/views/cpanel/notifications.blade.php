@@ -17,7 +17,7 @@
                 </div>
 
                 <div class="card-body">
-                    @if (count(auth()->user()->notifications)) > 0)                        
+                    @if(count(optional(auth()->user())->notifications) > 0)
                     @foreach(optional(auth()->user())->notifications as $notification)
                         <form method="post" action="{{route('cpanel.NotificationsPost')}}">
                             @csrf
