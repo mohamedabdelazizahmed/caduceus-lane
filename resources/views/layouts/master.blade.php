@@ -2,7 +2,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
-    <title>Doctors Lane - @yield('title')</title>
+    <title> caduceus-lane - @yield('title')</title>
 </head>
 <body>
 

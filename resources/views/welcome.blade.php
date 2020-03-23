@@ -66,7 +66,33 @@
         </div>
         @endif
         @if(auth()->user()->role_id == 3)
-        <div class="col-md-8">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">{{ __('Rules of Patient Panel ') }}</div>
+                <div class="card-body">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">ADD Profile For Patient</h5>
+                                <p class="card-text">Can ADD And Edit Profile.</p>
+                                <a href="#" class="btn btn-primary">Go Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Show Notification</h5>
+                            <p class="card-text">You can show Appoitment  Notification .</p>
+                            <a href="#" class="btn btn-primary">Notification </a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-2 col-md-8 offset-2">
             <div class="card">
                 <div class="card-header">{{ __('Make Appointment For Paitent') }}</div>
 
@@ -87,7 +113,7 @@
                             @endforeach
                         </select>
                     </div>
-                    <button type="submit" class="btn btn-primary">{{__('Make Appointment')}}</button>
+                    <button type="submit" class="col-md-12 btn btn-primary">{{__('Make Appointment')}}</button>
                 </form>
             
             
