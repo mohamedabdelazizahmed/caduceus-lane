@@ -25,7 +25,7 @@ Route::prefix('cpanel')->name('cpanel.')->group(function () {
     Route::post('saveBasicData/{id}','CpanelController@savePersonalData')->name('PersonalData');
     Route::get('addDoctor','CpanelController@addDoctor')->name('AddDoctor')->middleware('IsAdmin');
     Route::post('createDoctor','CpanelController@createDoctor')->name('CreateDoctor')->middleware('IsAdmin');
-    Route::get('sendNotification','CpanelController@sendNotification')->middleware('IsAdmin');
+    Route::get('sendNotification','CpanelController@sendNotification')->name('appointment')->middleware('IsAdmin');
     Route::post('sendNotificationPost','CpanelController@sendNotificationPost')->name('SendNotificationPost')->middleware('IsAdmin');
     Route::get('notifications','CpanelController@notifications')->name('Notifications');
     Route::post('notificationsPost','CpanelController@notificationsPost')->name('NotificationsPost');

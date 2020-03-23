@@ -17,7 +17,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">ADD Profile For Admin</h5>
                                 <p class="card-text">Can ADD And Edit Profile.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <a href="{{route('cpanel.profile')}}" class="btn btn-primary">Go somewhere</a>
                             </div>
                         </div>
                     </div>
@@ -26,7 +26,7 @@
                         <div class="card-body">
                             <h5 class="card-title">ADD New Doctors</h5>
                             <p class="card-text">Can ADD New Docotr With specilaty.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <a href="{{route('cpanel.AddDoctor')}}" class="btn btn-primary">Go ADD New Doctors</a>
                         </div>
                         </div>
                     </div>
@@ -38,7 +38,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Show Notification</h5>
                             <p class="card-text"> Show All Notification.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <a href="{{route('cpanel.Notifications')}}" class="btn btn-primary">Show Notification </a>
                         </div>
                         </div>
                     </div>
@@ -47,7 +47,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Make Appoiment for doctor and patient</h5>
                             <p class="card-text"> assigned patient to doctor and make appointment and send notification  .</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <a href="{{route('cpanel.appointment')}}" class="btn btn-primary">Make Appointment</a>
                         </div>
                         </div>
                     </div>
@@ -76,7 +76,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">ADD Profile For Patient</h5>
                                 <p class="card-text">Can ADD And Edit Profile.</p>
-                                <a href="#" class="btn btn-primary">Go Profile</a>
+                                <a href="{{route('cpanel.profile')}}" class="btn btn-primary">Go Profile</a>
                             </div>
                         </div>
                     </div>
@@ -85,7 +85,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Show Notification</h5>
                             <p class="card-text">You can show Appoitment  Notification .</p>
-                            <a href="#" class="btn btn-primary">Notification </a>
+                            <a href="{{route('cpanel.Notifications')}}" class="btn btn-primary">Notification </a>
                         </div>
                         </div>
                     </div>
